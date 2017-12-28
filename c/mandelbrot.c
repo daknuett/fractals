@@ -2,6 +2,7 @@
 #include "numpy/ndarrayobject.h"
 #include "numpy/ufuncobject.h"
 #include "numpy/halffloat.h"
+#include "numpy/ndarraytypes.h"
 
 
 
@@ -14,7 +15,6 @@ static PyMethodDef methods[] = {
 static void double_uf_juliac(char ** args, npy_intp *dimensions,
                               npy_intp* steps, void* data)
 {
-
 	char * out = args[3];
 	char * in = args[0];
 	char * _maxiter = args[1];
